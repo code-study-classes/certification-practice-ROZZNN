@@ -62,7 +62,7 @@ checkUniqueDigits(1234); // false
 checkUniqueDigits(-77); // false
 
 
-function isSecondQuadrant(x, y) {
+export function isSecondQuadrant(x, y) {
     return x < 0 && y > 0;
 }
 
@@ -71,7 +71,7 @@ isSecondQuadrant(5, -1); // false
 isSecondQuadrant(-1, -2); // false
 
 
-function isIsoscelesTriangle(a, b, c) {
+export function isIsoscelesTriangle(a, b, c) {
     if (a === b && b !== c) {
         return true;
     } else if (a === c && b !== c) {
@@ -88,7 +88,7 @@ isIsoscelesTriangle(5, 7, 8); // false
 isIsoscelesTriangle(5, 5, 6); // true
 
 
-function areSameColorFields(x1, y1, x2, y2) {
+export function areSameColorFields(x1, y1, x2, y2) {
     // Проверяем, имеют ли поля одинаковый цвет
     return (x1 + y1) % 2 === (x2 + y2) % 2;
 }
@@ -104,6 +104,3 @@ if (areSameColorFields(x1, y1, x2, y2)) {
 } else {
     console.log("Поля имеют разный цвет");
 }
-
-describeNumber(256); // "двести пятьдесят шесть"
-describeNumber(814); // "восемьсот четырнадцать"

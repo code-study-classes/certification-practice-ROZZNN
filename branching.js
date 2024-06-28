@@ -26,7 +26,7 @@ export function findMiddleNumber(num1, num2, num3) {
     return middleNumber;
 }
 
-export function findUniqueNumber(num1, num2, num, num4) {
+export function findUniqueNumber(num1, num2, num3, num4) {
     if (num1 === num2 && num1 === num3) {
         return 4;
     } else if (num1 === num2 && num1 === num4) {
@@ -72,25 +72,25 @@ export function getDayName(dayNumber) {
     let dayName;
     switch (dayNumber){        
         case 1:           
-            dayName = "Понедельник";
+            dayName = "Monday";
             break;
         case 2:
-            dayName = "Вторник";
+            dayName = "Tuesday";
             break;
         case 3:
-            dayName = "Среда";
+            dayName = "Wednesday";
             break;
         case 4:
-            dayName = "Четверг";
+            dayName = "Thursday";
             break;
         case 5:
-            dayName = "Пятница";
+            dayName = "Friday";
             break;
         case 6:
-            dayName = "Суббота";
+            dayName = "Saturday";
             break;
         case 7:
-            dayName = "Воскресенье";
+            dayName = "Sunday";
             break;
         default:
             dayName = "Invalid day number.";
@@ -99,7 +99,7 @@ export function getDayName(dayNumber) {
 }
 
 export function convertToMeters(unitNumber, lengthInUnits) {
-    lengthInMeters;
+    let lengthInMeters;
 
     switch (unitNumber) {
         case 1:

@@ -1,6 +1,6 @@
 //-----------------
 // 1
-function countUppercaseLetters(str) {
+export function countUppercaseLetters(str) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
     if (/[A-Z]/.test(str[i])) {
@@ -56,7 +56,7 @@ console.log(normalizeSpaces(sentence)); // Выведет "Hello world with spac
 
 //----------------------------
 // 9
-function encryptSentence(sentence) {
+export function encryptSentence(sentence) {
   let evenChars = '';
   let oddChars = '';
 
@@ -101,7 +101,7 @@ if (checkBrackets(inputString)) {
 }
 
 // 2
-function combineStrings(N1, N2, S1, S2) {
+export function combineStrings(N1, N2, S1, S2) {
   const A = S1.slice(0, N1);
   const B = S2.slice(-N2);
   return A + B;
@@ -111,7 +111,7 @@ console.log(combineStrings(2, 4, 'JavaScript', 'Coding')); // 'Jading'
 console.log(combineStrings(1, 3, 'Apple', 'Banana')); // 'Aana'
 
 // 4
-function replaceSubstring(S, S1, S2) {
+export function replaceSubstring(S, S1, S2) {
   const index = S.indexOf(S1);
   if (index !== -1) {
     return S.slice(0, index) + S2 + S.slice(index + S1.length);
@@ -123,7 +123,7 @@ console.log(replaceSubstring('JavaScript is amazing', 'is', 'will be')); // 'Jav
 console.log(replaceSubstring('Programming is fun', 'Java', 'Python')); // 'Programming is fun'
 console.log(replaceSubstring('OpenAI', 'AI', 'Artificial Intelligence')); // 'OpenArtificial Intelligence'
 // 6
-function countWordsWithA(sentence) {
+export function countWordsWithA(sentence) {
   const words = sentence.split(' ');
   let count = 0;
   for (let i = 0; i < words.length; i++) {
@@ -139,7 +139,7 @@ console.log(countWordsWithA('Aardvark Zebra Elephant')); // 3
 console.log(countWordsWithA('This is a sample sentence.')); // 2
 
 // 8
-function extractFileName(fullFileName) {
+export function extractFileName(fullFileName) {
   const N = fullFileName.split('/').pop();
   const Z = N.split('.')[0];
   return Z;
