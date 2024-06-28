@@ -75,30 +75,6 @@ export function encryptSentence(sentence) {
 const s = 'Hello world';
 console.log(encryptSentence(sentence)); // Выведет "Hlowrdel ol"
 //----------------------------
-// Частное при частное 10
-function checkBrackets(str) {
-  const stack = [];
-
-  for (const char of str) {
-    if (char === '(') {
-      stack.push(char);
-    } else if (char === ')') {
-      if (stack.length === 0 || stack.pop() !== '(') {
-        return false;
-      }
-    }
-  }
-
-  return stack.length === 0;
-}
-
-// Пример использования
-const inputString = '((a+b)*(c-d))';
-if (checkBrackets(inputString)) {
-  console.log('Скобки расставлены правильно.');
-} else {
-  console.log('Скобки расставлены неправильно.');
-}
 
 // 2
 export function combineStrings(N1, N2, S1, S2) {
