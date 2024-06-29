@@ -1,6 +1,6 @@
 //-----------------
 // 1
-export function countUppercaseLetters(str) {
+const countUppercaseLetters = (str) => {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
     if (/[A-Z]/.test(str[i])) {
@@ -10,7 +10,7 @@ export function countUppercaseLetters(str) {
   return count;
 }
 
-module.exports = countUppercaseLetters;
+// module.exports = countUppercaseLetters;
 // -----------------=-
 // 3
 
@@ -148,3 +148,5 @@ if (checkBrackets(inputStringq)) {
 } else {
     console.log("Скобки расставлены неправильно.");
 }
+
+export { countUppercaseLetters };

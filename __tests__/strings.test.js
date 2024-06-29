@@ -9,7 +9,7 @@ import {
   extractFileName,
   encryptSentence,
   checkBrackets,
-} from '../strings';
+} from '../strings.js';
 
 describe('Group: strings', () => {
   test('task1', () => {
